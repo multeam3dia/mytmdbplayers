@@ -1,0 +1,18 @@
+{
+    "name"              : "[COLORdeepskyblue]KinoGer[/COLOR]",
+	"language"          : "de",
+    "plugin"            : "plugin.video.xstream",
+    "is_resolvable"     : "true",
+    "play_movie"        : [
+						"plugin://plugin.video.xstream/?function=showSearch&amp;params=0&amp;site=kinoger&amp;title=Suche&searchterm={title}",
+						{"keyboard": "{title}"},
+						{"title": "{title}"}
+                          ],
+	"play_episode"      : [
+                       	"plugin://plugin.video.xstream/?function=showSearch&amp;params=0&amp;site=kinoger&amp;title=Suche&searchterm={showname}",
+						{"keyboard": "{showname}"},
+						{"title": "{showname}"},
+						{"position": "{season}"},
+						{"season": "{season}", "episode": "{episode}"}
+                          ]
+}
